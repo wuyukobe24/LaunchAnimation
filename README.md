@@ -1,0 +1,3 @@
+# LaunchAnimation
+LaunchImage启动动画
+在LaunchImage启动之后在原图片上加载动画
