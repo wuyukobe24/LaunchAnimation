@@ -15,6 +15,8 @@
 		F1F540B91F32C2D000BB192E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F540B71F32C2D000BB192E /* LaunchScreen.storyboard */; };
 		F1F540C41F32C2D000BB192E /* VC______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F540C31F32C2D000BB192E /* VC______Tests.m */; };
 		F1F540CF1F32C2D000BB192E /* VC______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F540CE1F32C2D000BB192E /* VC______UITests.m */; };
+		F1F540E01F32CA4E00BB192E /* LaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F540DF1F32CA4E00BB192E /* LaunchImageView.m */; };
+		F1F540E31F32D0C600BB192E /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F540E21F32D0C600BB192E /* LaunchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		F1F540CA1F32C2D000BB192E /* VC助手启动动画UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VC助手启动动画UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F540CE1F32C2D000BB192E /* VC______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "VC______UITests.m"; sourceTree = "<group>"; };
 		F1F540D01F32C2D000BB192E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F540DE1F32CA4E00BB192E /* LaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchImageView.h; sourceTree = "<group>"; };
+		F1F540DF1F32CA4E00BB192E /* LaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchImageView.m; sourceTree = "<group>"; };
+		F1F540E11F32D0C600BB192E /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		F1F540E21F32D0C600BB192E /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				F1F540AD1F32C2D000BB192E /* AppDelegate.m */,
 				F1F540AF1F32C2D000BB192E /* ViewController.h */,
 				F1F540B01F32C2D000BB192E /* ViewController.m */,
+				F1F540E11F32D0C600BB192E /* LaunchViewController.h */,
+				F1F540E21F32D0C600BB192E /* LaunchViewController.m */,
+				F1F540DE1F32CA4E00BB192E /* LaunchImageView.h */,
+				F1F540DF1F32CA4E00BB192E /* LaunchImageView.m */,
 				F1F540B21F32C2D000BB192E /* Main.storyboard */,
 				F1F540B51F32C2D000BB192E /* Assets.xcassets */,
 				F1F540B71F32C2D000BB192E /* LaunchScreen.storyboard */,
@@ -277,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F540B11F32C2D000BB192E /* ViewController.m in Sources */,
+				F1F540E01F32CA4E00BB192E /* LaunchImageView.m in Sources */,
 				F1F540AE1F32C2D000BB192E /* AppDelegate.m in Sources */,
+				F1F540E31F32D0C600BB192E /* LaunchViewController.m in Sources */,
 				F1F540AB1F32C2D000BB192E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,11 +439,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = UV433VL8PE;
 				INFOPLIST_FILE = "VC助手启动动画/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jbtouzi.jingbei.VC------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -439,11 +454,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = UV433VL8PE;
 				INFOPLIST_FILE = "VC助手启动动画/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jbtouzi.jingbei.VC------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
